@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style/css/index.css"/>
+        
+    </head>
+    <body>
+        <div class="SystemMemoryBlock block">
+            <h1>System Memory:</h1>
+            <p>
+               You are using <b id="remainingMemory"></b> bytes out of <b id="totalMemory"></b> bytes.<br> You have <b id="percentage"></b> unused!
+            </p>
+        </div>
+        <div class="networkBlock block">
+            <h1>Network</h1>
+            <ul>
+                <li>
+                    Current IPV4 Address: <br>
+                    <b id="IPv4Address"></b>
+                </li>
+                <li>Current IPV6 Address: <br>
+                    <b id="IPv6Address"></b>
+                </li>
+                <li>
+                    CIDR: <br>
+                    <b id="IPv4cidr"></b>
+                </li>
+                <li>
+                    Subnet Mask: <br>
+                    <b id="IPv4mask"></b>
+                </li>
+                <li>
+                    MAC Address: <br>
+                    <b id="IPv4mac"> </b>
+                </li>
+            </ul>
+
+        </div>
+        <div class="CPUBlock block" >
+            <h1>CPU</h1>
+            <ul>
+                <li>Model: <br><b id="cpuModel"></b></li>
+                <li>Total Cores: <b id="cores"></b></li>
+                <li>CPU architecture: <b id="arch"></b></li>
+            </ul>
+        </div>
+        <div class="OSBlock block">
+            <h1>Operating System</h1>
+            <ul>
+                <li>System Name: <br><b id="hostname"></b></li>
+                <li>Type: <br><b id="OSType"></b></li>
+                <li>Home directory: <br><b id="homeDirectory"></b></li>
+                <li>Temp directory: <br><b id="tempDirectory"></b></li>
+                <li>Release: <b iD="release"></b></li>
+            </ul>
+        </div>
+        <div class="versionBlock block">
+            <h1>Versions</h1>
+            <ul>
+                <li>Node Version: <br><b id="nodeVersion"></b></li>
+                <li>Electron Version: <br><b id="electronVersion"></b></li>
+            </ul>
+        </div>
+        <script>
+        require('./scripts/index.js')
+        </script>
+    </body>
+</html>

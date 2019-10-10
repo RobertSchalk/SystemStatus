@@ -1,0 +1,214 @@
+*{
+    font-family: monospace;
+    transition: 0.3s;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #047;
+    text-align: center;
+   
+}
+
+
+
+
+.block{
+    margin: 10px;
+    font-size: 15px;
+    overflow-y: auto;
+}
+.SystemMemoryBlock{
+    width: calc(400px - 10px);
+    height: 200px;
+    padding: 5px;
+    display: block;
+    /*vertical-align: middle;*/
+    color: #cecece;
+    background-color: #333;
+    border: 1px solid #000;
+    border-radius: 10%;
+    box-shadow: 2px 2px 3px #000;
+    line-height: 25px;
+    float: left;
+    position: relative;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    /*position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 0;
+    right: 0;*/
+    z-index: 5;
+}
+
+.networkBlock{
+    width: calc(450px - 10px);
+    height: 320px;
+    padding: 5px;
+    display: block;
+    /*vertical-align: middle;*/
+    color: #cecece;
+    background-color: #333;
+    border: 1px solid #000;
+    border-radius: 10%;
+    box-shadow: 2px 2px 3px #000;
+    line-height: 25px;
+    float: left;
+    position: relative;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    /*position: absolute;
+    top: 10px;
+    left: calc(50% - 225px);
+    bottom: 0;
+    right: 0;*/
+    z-index: 5;
+}
+
+
+.CPUBlock{
+    width: calc(400px - 10px);
+    height: 200px;
+    padding: 5px;
+    display: block;
+    /*vertical-align: middle;*/
+    color: #cecece;
+    background-color: #333;
+    border: 1px solid #000;
+    border-radius: 10%;
+    box-shadow: 2px 2px 3px #000;
+    line-height: 25px;
+    float: right;
+    position: relative;
+    top:0;
+    left: -30px;
+    bottom: 0;
+    right: 0;
+    /*position: absolute;
+    top: 10px;
+    left: calc(100% - 410px);
+    bottom: 0;
+    right: 0;*/
+    z-index: 5;
+}
+.OSBlock{
+    width: calc(400px - 10px);
+    height: 320px;
+    padding: 5px;
+    display: block;
+    /*vertical-align: middle;*/
+    color: #cecece;
+    background-color: #333;
+    border: 1px solid #000;
+    border-radius: 10%;
+    box-shadow: 2px 2px 3px #000;
+    line-height: 25px;
+    float: right;
+    position: relative;
+    top: 0px;
+    left: -30px;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+}
+.versionBlock{
+    width: calc(400px - 10px);
+    height: 320px;
+    padding: 5px;
+    display: block;
+    /*vertical-align: middle;*/
+    color: #cecece;
+    background-color: #333;
+    border: 1px solid #000;
+    border-radius: 10%;
+    box-shadow: 2px 2px 3px #000;
+    line-height: 25px;
+    float: left;
+    position: relative;
+    top: -100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+}
+.versionBlock b{
+    color: #0f0;
+}
+h1{
+    width: 100%;
+    height: 15px;
+    margin: 2px inherit inherit;
+    display: block;
+
+}
+.p{
+    margin: 0;
+    padding:0;
+    display: block;
+
+}
+ul{
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style-type: none; 
+    padding-left: 20px;
+    text-align: left;
+}
+ul b{
+    list-style-type: none; 
+    padding-left: 30px;
+    text-align: left;
+    display: block;
+
+}
+.network{
+    width: 100%;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+}
+.networkBlock p{
+    width: calc(100% - 10px);
+    height: 100%;
+    margin: 0;
+    display: block;
+    padding-left: 10px;
+    line-height: 25px;
+    text-align: left;
+    font-weight: bolder;
+}
+.networkBlock b{
+    width: calc(100% - 50px);
+    height: 100%;
+    margin: 0;
+    display: block;
+    padding-left: 50px;
+    line-height: 25px;
+    text-align: left;
+    font-weight: bolder;
+    color: #ff0;
+}
+
+.OSBlock b{
+    color: #0f0;
+    font-size: 15px;
+}
