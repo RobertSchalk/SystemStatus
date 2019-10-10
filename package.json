@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/RobertSchalk/SystemStatus#readme",
   "dependencies": {
-    "electron": "^6.0.12",
     "electron-window-state": "^5.0.3",
     "expect.js": "^0.3.1",
     "fs": "0.0.1-security",
@@ -28,5 +27,29 @@
     "spectron": "^8.0.0",
     "superagent": "^5.1.0",
     "systeminformation": "^4.14.11"
+  },
+   "build": {
+    "appId": "com.RobertSchalk.SystemStatus",
+    "copyright": "Copyright 2019 Robert Schalk",
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "zip",
+      "certificateFile": "../private/RobertSchalk.pfx",
+      "certificatePassword": "",
+      "verifyUpdateCodeSignature": false,
+      "publish": [
+        "github",
+        "bintray"
+      ]
+    },
+    "linux": {
+      "category": "Network",
+      "target": "zip"
+    }
+  },
+  "devDependencies": {
+    "electron": "^6.0.7"
   }
 }
