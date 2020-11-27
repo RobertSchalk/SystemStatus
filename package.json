@@ -26,7 +26,7 @@
     "path": "^0.12.7",
     "spectron": "^8.0.0",
     "superagent": "^5.1.0",
-    "systeminformation": "^4.14.11"
+    "systeminformation": "^4.30.5"
   },
    "build": {
     "appId": "com.RobertSchalk.SystemStatus",
